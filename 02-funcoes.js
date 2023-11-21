@@ -19,3 +19,19 @@ function exemplo02(){
 
 exemplo02();
 
+/* Exercício
+1) Crie uma função (qualquer sintaxe) que receba dois valores numéricos, calcule a diferença entre eles e retorne o resultado.
+
+2) Chame esta função duas vezes passando valores diferentes e guardando-os em variáveis de escopo global.
+
+3) Mostre os valores processados pela função no terminal.
+*/
+
+function exercicio01(){
+    var resultado = valor1 - valor2;
+    return resultado;
+}
+
+console.log(exercicio01(valor1 = 100, valor2 = 30));
+
+console.log(exercicio01(valor1 = 1000, valor2 = 300));
