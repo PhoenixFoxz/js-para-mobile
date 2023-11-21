@@ -106,9 +106,8 @@ Exercícios
 
 */
 
-const maiuscula = (nome) => {
-   return nome.toUpperCase();
-}
+const maiuscula = nome => nome.toUpperCase();
+
 
 let nome1 = maiuscula("felipe");
 let nome2 = maiuscula("barbosa");
