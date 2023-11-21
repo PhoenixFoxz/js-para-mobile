@@ -77,7 +77,19 @@ exemplo3();
 // Omitir as { } (SOMENTE QUANDO FOR UMA ÚNICA INSTRUÇÃO)
 const saudacao = cliente => console.log("Olá "+ cliente);
 
-
-
 saudacao("Fulano");
 saudacao("Beltrano");
+
+// Arrow Function padrão com retorno EXPLÍCITO
+const calculaMetadeOriginal = (valor) => {
+    return valor / 2;
+};
+
+// Arrow Function com retorno IMPLÍCITO
+const calculaMetade = valor => valor / 2;
+
+let resultadoA = calculaMetade(100);
+let resultadoB = calculaMetade(666);
+
+console.log(resultadoA);
+console.log(resultadoB);
