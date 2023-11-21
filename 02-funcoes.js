@@ -36,12 +36,17 @@ function exercicio01(valor1, valor2){
 2) Chame esta função duas vezes passando valores diferentes e guardando-os em variáveis de escopo global.
 */
 let resultado1 = exercicio01(10, 5);
-let resultado2 = exercicio01(120, 66)
+let resultado2 = exercicio01(130, 66);
+let resultado3 = exercicio01(66, 130);
+
 /*
 3) Mostre os valores processados pela função no terminal.
 */
 console.log(resultado1);
 console.log(resultado2);
+
+// Garantindo que o resultado seja absoluto (positivo)
+console.log(Math.abs(resultado3));
 
 // Meu exercício
 // function exercicio01(){
