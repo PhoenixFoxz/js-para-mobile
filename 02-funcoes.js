@@ -70,9 +70,14 @@ exemplo3();
 // };
 
 // Omitir os parênteses do parâmetro (SOMENTE QUANDO FOR 1)
-const saudacao = cliente => {
-    console.log("Olá "+ cliente);
-};
+// const saudacao = cliente => {
+//     console.log("Olá "+ cliente);
+// };
+
+// Omitir as { } (SOMENTE QUANDO FOR UMA ÚNICA INSTRUÇÃO)
+const saudacao = cliente => console.log("Olá "+ cliente);
+
+
 
 saudacao("Fulano");
 saudacao("Beltrano");
