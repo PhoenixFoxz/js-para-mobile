@@ -57,3 +57,22 @@ console.log(Math.abs(resultado3));
 // console.log(exercicio01(valor1 = 100, valor2 = 30));
 
 // console.log(exercicio01(valor1 = 1000, valor2 = 300));
+
+// Sintaxe Arrow Function
+const exemplo3 = () => {
+    console.log("Arrow Function!");
+};
+
+exemplo3();
+
+// const saudacao = (cliente) => {
+//     console.log("Olá "+ cliente);
+// };
+
+// Omitir os parênteses do parâmetro (SOMENTE QUANDO FOR 1)
+const saudacao = cliente => {
+    console.log("Olá "+ cliente);
+};
+
+saudacao("Fulano");
+saudacao("Beltrano");
