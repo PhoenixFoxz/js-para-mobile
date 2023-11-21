@@ -23,15 +23,16 @@ exemplo02();
 /* Exercício
 1) Crie uma função (qualquer sintaxe) que receba dois valores numéricos, calcule a diferença entre eles e retorne o resultado.
 */
-function exercicio01(valor1, valor2){
-    //1° Versão: Variável de escopo LOCAL
-    // let resultado = valor1 - valor2;
-    // return resultado;
+// function exercicio01(valor1, valor2){
+//     //1° Versão: Variável de escopo LOCAL
+//     // let resultado = valor1 - valor2;
+//     // return resultado;
 
-    //2° Versão
-    return valor1 - valor2;
-}
+//     //2° Versão
+//     return valor1 - valor2;
+// }
 
+const exercicio01 = (valor1, valor2) =>  Math.abs(valor1 - valor2);
 /*
 2) Chame esta função duas vezes passando valores diferentes e guardando-os em variáveis de escopo global.
 */
@@ -44,9 +45,9 @@ let resultado3 = exercicio01(66, 130);
 */
 console.log(resultado1);
 console.log(resultado2);
-
+console.log(resultado3);
 // Garantindo que o resultado seja absoluto (positivo)
-console.log(Math.abs(resultado3));
+// console.log(Math.abs(resultado3));
 
 // Meu exercício
 // function exercicio01(){
