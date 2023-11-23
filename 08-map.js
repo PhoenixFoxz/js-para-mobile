@@ -40,3 +40,8 @@ for( const prop in cursos ) {
     console.log("-----------");
 }
 
+const desafio = cursos.map( curso => {
+    return { ...curso, preco: curso.preco - (curso.preco * 10) / 100 }
+});
+
+console.log(desafio);
