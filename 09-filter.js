@@ -55,3 +55,7 @@ console.log(cursosMenosDesign);
 const cursosFrontMobile = cursos.filter( curso => curso.preco > 600 && curso.categoria === "Front-End" || curso.categoria === "Mobile" );
 
 console.log(cursosFrontMobile);
+
+const cursosMobile = cursos.filter( curso => curso.categoria == "Mobile" ).map( curso => curso.titulo );
+
+console.log(cursosMobile);
