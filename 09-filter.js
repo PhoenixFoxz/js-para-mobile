@@ -1,5 +1,7 @@
 // 09-filter.js
 
+import cursos from "./modulos/cursos.js";
+
 /* filter (filtrar)
 Passa por elementos de um array (usando uma função callback) e retorna valores de acordo com uma ou mais condições gerado um novo array.  
 */
@@ -26,9 +28,30 @@ const alunos = [
 
 console.log(alunos);
 
+// Filtrando alunos que começam com "M" e terminam com "o"
+// Obs.: faz diferença usar maiúsculas ou minúsculas.
 const resultados = alunos.filter( aluno => {
     // return aluno.startsWith("M") || aluno.startsWith("m")
     return aluno.startsWith("M") && aluno.endsWith("o")
 }  );
 
 console.log(resultados);
+
+console.log("-----------");
+
+// Filtrando cursos
+console.log(cursos);
+
+// Filtrando por cursos da categoria Design
+
+const cursosDesign = cursos.filter( curso => curso.categoria === "Design" );
+console.log(cursosDesign);
+
+// Filtrando por cursos que NÃO SÃO da categoria Design
+const cursosMenosDesign = cursos.filter( curso => curso.categoria !== "Design" );
+
+console.log(cursosMenosDesign);
+
+const cursosFrontMobile = cursos.filter( curso => curso.preco > 600 && curso.categoria === "Front-End" || curso.categoria === "Mobile" );
+
+console.log(cursosFrontMobile);
