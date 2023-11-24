@@ -9,9 +9,7 @@ e retorna um único valor/resultado. Pode ser útil para operações matemática
 
 // Exemplo 1
 const valores = [10, 5, 50, 200, 1000];
-const total = valores.reduce((acumulador, valor) => {
-    return acumulador + valor
-}, 0);
+const total = valores.reduce((acumulador, valor) => acumulador + valor, 0);
 
 console.log(valores);
 console.log(total);
@@ -46,6 +44,6 @@ console.log(totalCurso);
 
 const totalFrontBack = cursos
 .filter( curso => curso.categoria === "Front-End" || curso.categoria === "Back-End" )
-.reduce( (acumulador, curso) => { return acumulador + curso.preco}, 0)
+.reduce( (acumulador, valor) => acumulador + valor.preco, 0)
 
 console.log(totalFrontBack);
