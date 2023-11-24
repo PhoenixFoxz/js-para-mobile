@@ -56,6 +56,16 @@ const cursosFrontMobile = cursos.filter( curso => curso.preco > 600 && curso.cat
 
 console.log(cursosFrontMobile);
 
-const cursosMobile = cursos.filter( curso => curso.categoria == "Mobile" ).map( curso => curso.titulo );
+const cursosMobile = cursos.filter( curso => curso.categoria === "Mobile" ).map( curso => curso.titulo );
+
+// Desafio: gerar um novo array somente com os títulos dos cursos da categoria Mobile
 
 console.log(cursosMobile);
+
+// Sem encadeamento 
+
+const desafio2 = cursos.filter(curso => curso.categoria == "Mobile");
+console.log(desafio2);
+
+const desafio2Titulos = desafio2.map(curso => curso.titulo);
+console.log(desafio2Titulos);
