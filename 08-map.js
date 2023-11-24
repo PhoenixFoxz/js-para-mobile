@@ -40,8 +40,9 @@ for( const prop in cursos ) {
     console.log("-----------");
 }
 
-const desafio = cursos.map( curso => {
-    return { ...curso, preco: curso.preco - (curso.preco * 10) / 100 }
-});
+// const desafio = cursos.map( curso => { return { ...curso, preco: curso.preco - (curso.preco * 10) / 100 }});
+
+// Simplificar a arrow function: é necessário envolver o código de return implícito com parênteses.
+const desafio = cursos.map( curso => ({ ...curso, preco: curso.preco - (curso.preco * 10) / 100 }));
 
 console.log(desafio);
